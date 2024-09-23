@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 05</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+    </style>
+</head>
+<body class="mx-auto ">
+    <header class="sticky top-0 z-auto">
+        <nav class="navbar bg-base-100 flex justify-between text-center items-center gap-4 mx-auto">
+                <div class="">
+                    <a class="btn bg-[#B4F461]">Blog</a>
+                </div>
+                <div class="btn btn-ghost flex justify-center items-center sm:text-xs lg:text-xl text-center h-12 w-fit ">
+                    <img class="h-7 w-7" src="./assets/logo.png" alt="">
+                    <a class="">Donate Bangladesh</a>
+                </div>
+                <div class="flex gap-2  btn btn-ghost w-fit">
+                    <img class="h-7 w-7" src="./assets/coin.png" alt="">
+                    <a class="flex gap-1">
+                        <span>500</span>
+                        <span>BDT</span>
+                    </a>
+                </div>
+              
+        </nav>
+        <div class="flex justify-center mx-auto gap-6 mt-6"> 
+            <button class="btn">
+                Donation
+            </button>
+            <button class="btn">
+                History
+            </button>
+        </div>
+    </header>
+    <main>
+       <section>
+            <div class="grid sm:grid-cols-1 lg:grid-cols-2  bg-base-100 max-w-screen-lg mx-auto shadow-xl rounded-lg gap-4 py-4 ">
+                <figure class="pt-10 h-full w-full mx-auto">
+                    <img
+                        src="./assets/noakhali.png"
+                        alt=""
+                        class="rounded-xl h-full w-full px-4" />
+                </figure>
+                <div class="mx-auto px-4 pt-10 text-left items-start h-full w-full">
+                    <button class="btn mx-auto">
+                        <img class="h-7 w-7" src="./assets/coin.png" alt="">
+                        <p class="flex gap-1">
+                        <span>0</span>
+                        <span>BDT</span>
+                        </p>
+                    </button>
+                    <h2 class="font-bold mx-auto mt-4 text-left">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p class="mt-4 mx-auto text-justify"> The recent floods in Noakhali have caused significant damage to 
+                        homes  infrastructure. Your donation will help provide essential 
+                        supplies and  to those affected by this disaster. Every contribution, 
+                         big or small, makes  difference. Please join us in supporting the relief 
+                         efforts and making a positive impact on the lives of those in need.</p>
+                    
+                    <form class="flex flex-col mt-4 w-96" action="">
+                        <input type="text" placeholder="Type here" class="input input-bordered mb-4 max-w-full col-span-2" />
+                            
+                        <button class="btn bg-[#B4F461] text-left">Buy Now</button>
+                    </form>    
+                        
+                                                 
+                </div>
+          </div>
+      </section>
+       <section></section>
+    </main>
+</body>
+</html>
