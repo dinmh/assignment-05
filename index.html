@@ -14,7 +14,7 @@
     <header class="sticky top-0 z-auto bg-slate-50">
         <nav class="navbar bg-base-100 flex justify-between text-center items-center gap-4 mx-auto">
                 <div class="">
-                    <a class="btn bg-[#B4F461]">Blog</a>
+                    <a onclick="secondPage()" class="btn bg-[#B4F461]">Blog</a>
                 </div>
                 <div class="btn btn-ghost flex justify-center items-center sm:text-xs lg:text-xl text-center h-12 w-fit ">
                     <img class="h-7 w-7" src="./assets/logo.png" alt="">
@@ -66,7 +66,7 @@
                     <form class="flex flex-col mt-4 w-96" action="">
                         <input id="input-noakhali" type="text" placeholder="Write Donation Amount" autocomplete="off" class="input input-bordered mb-4 max-w-full col-span-2" />
                             
-                        <button id="noakhali" class="btn bg-[#B4F461] text-left">Donate Now</button>
+                        <button id="noakhali" onclick="my_modal_5.showModal()" class="btn bg-[#B4F461] text-left">Donate Now</button>
                     </form>    
                         
                                                  
@@ -101,7 +101,7 @@
                 <form class="flex flex-col mt-4 w-96" action="">
                     <input id="input-feni" type="text" placeholder="Write Donation Amount" class="input input-bordered mb-4 max-w-full col-span-2" />
                         
-                    <button id="feni" class="btn bg-[#B4F461] text-left">Donate Now</button>
+                    <button id="feni" onclick="my_modal_5.showModal()" class="btn bg-[#B4F461] text-left">Donate Now</button>
                 </form>    
                     
                                              
@@ -135,7 +135,7 @@
                  <form class="flex flex-col mt-4 w-96" action="">
                      <input id="input-quota" type="text" placeholder="Write Donation Amount" class="input input-bordered mb-4 max-w-full col-span-2" />
                          
-                     <button id="quota" class="btn bg-[#B4F461] text-left">Donate Now</button>
+                     <button id="quota" onclick="my_modal_5.showModal()" class="btn bg-[#B4F461] text-left">Donate Now</button>
                  </form>    
                      
                                               
@@ -146,7 +146,7 @@
        
 
        <!-- section four start -->
-       <section>
+       <section >
         <div class="grid sm:grid-cols-1 lg:grid-cols-2  bg-base-100 max-w-screen-lg mx-auto shadow-xl rounded-lg gap-4 py-4 ">
            <figure class="pt-10 h-full w-full mx-auto">
              <img
@@ -158,7 +158,7 @@
              <button class="btn mx-auto">
                  <img class="h-7 w-7" src="./assets/coin.png" alt="">
                  <p class="flex gap-1">
-                 <span id="add-money-contribute">0</span>
+                 <span id="add-money-contribute">100</span>
                  <span>BDT</span>
                  </p>
              </button>
@@ -170,7 +170,7 @@
              <form class="flex flex-col mt-4 w-96" action="">
                  <input id="input-contribute" type="text" placeholder="Write Donation Amount" class="input input-bordered mb-4 max-w-full col-span-2" />
                      
-                 <button id="contribute" class="btn bg-[#B4F461] text-left">Donate Now</button>
+                 <button id="contribute" onclick="my_modal_5.showModal()" class="btn bg-[#B4F461] text-left">Donate Now</button>
              </form>    
                  
                                           
@@ -206,7 +206,7 @@
                 <form class="flex flex-col mt-4 w-96" action="">
                     <input id="input-soliderity" type="text" placeholder="Write Donation Amount" class="input input-bordered mb-4 max-w-full col-span-2" />
                         
-                    <button id="soliderity" class="btn bg-[#B4F461] text-left">Donate Now</button>
+                    <button id="soliderity" onclick="my_modal_5.showModal()" class="btn bg-[#B4F461] text-left">Donate Now</button>
                 </form>    
                     
                                             
@@ -220,6 +220,23 @@
         <section class="bg-base-100 max-w-screen-lg mx-auto shadow-xl rounded-lg gap-4 py-4 mt-6">
 
         </section>
+
+        <!-- You can open the modal using ID.showModal() method -->
+
+                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                    <div class="modal-box ">
+                        <h3 class="text-lg mx-auto font-bold text-center py-4">Congrates!</h3>
+                        <img class="mx-auto" src="./assets/coin.png" alt="">
+                        <p class="py-4 mx-auto text-center">You Have Donate for Humankind</p>
+                        <p class="py-4 mx-auto text-center text-lg font-bold">Successfully</p>
+                        <div class="modal-action">
+                        <form method="dialog">
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button class="btn mr-36">Close Confirmation</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
     
     </main>  
     <script src="/ffunction.js"></script>

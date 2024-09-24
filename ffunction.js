@@ -18,3 +18,12 @@ function getDonateValueById(id){
     const recentValue = parseFloat(donateValue);
     return recentValue;
 }
+
+function secondPage(){
+    window.location.href = './blog.html'
+   
+}
+
+function secondPage2(){
+    window.location.href = './index.html'
+}

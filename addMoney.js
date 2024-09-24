@@ -82,6 +82,7 @@ document.getElementById('soliderity')
     event.preventDefault();
     const inputNoakhali = getInputValueById('input-soliderity'); 
     const addMoney = getTextValueById('add-money-soliderity');
+   
     const newMoney = addMoney + inputNoakhali;
     document.getElementById('add-money-soliderity').innerText = newMoney;
     const donateAmount = getDonateValueById('funded-amount');
@@ -89,4 +90,7 @@ document.getElementById('soliderity')
     document.getElementById('funded-amount').innerText = recentTotalMoney;
     
 })
+
+
+
 
