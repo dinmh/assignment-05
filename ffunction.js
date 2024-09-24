@@ -12,3 +12,9 @@ function getTextValueById(id){
     const textDonate = parseFloat(textValue);
     return textDonate;
 }
+
+function getDonateValueById(id){
+    const donateValue = document.getElementById(id).innerText;
+    const recentValue = parseFloat(donateValue);
+    return recentValue;
+}
