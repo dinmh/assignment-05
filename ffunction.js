@@ -1,6 +1,9 @@
 function getInputValueById(id){
-    const inputValue = document.getElementById(id).Value;
-    const inputDonate = parseFloat(inputValue)
+    
+    const inputValue = document.getElementById(id).value;
+    
+    const inputDonate = parseFloat(inputValue);
+   
     return inputDonate;
 }
 
