@@ -27,3 +27,11 @@ function secondPage(){
 function secondPage2(){
     window.location.href = './index.html'
 }
+
+function showFormById(id){
+    document.getElementById('donationAdded').classList.add('hidden');
+    document.getElementById('historyAdded').classList.add('hidden');
+
+    document.getElementById(id).classList.remove('hidden');
+
+}

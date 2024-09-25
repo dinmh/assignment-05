@@ -82,15 +82,41 @@ document.getElementById('soliderity')
     event.preventDefault();
     const inputNoakhali = getInputValueById('input-soliderity'); 
     const addMoney = getTextValueById('add-money-soliderity');
-   
+    
+    // if (isNaN(inputNoakhali) &&  inputNoakhali<= 0 &&  inputNoakhali>recentTotalMoney && !document.getElementById('inputNoakhali').value){
+    //     aleart ('Please input valid number');
+    //     return;
+    // }
+        
     const newMoney = addMoney + inputNoakhali;
     document.getElementById('add-money-soliderity').innerText = newMoney;
+
     const donateAmount = getDonateValueById('funded-amount');
     const recentTotalMoney = donateAmount - inputNoakhali;
     document.getElementById('funded-amount').innerText = recentTotalMoney;
     
+    
+
 })
 
+// show form
+document.getElementById('donation-show')
+.addEventListener('click', function(event){
+    event.preventDefault();
+    showFormById('donationAdded');
+    document.getElementById('donation-show').classList.add('bg-[#B4F461]');
+    document.getElementById('history-show').classList.remove('bg-[#B4F461]');
+
+})
+
+document.getElementById('history-show')
+.addEventListener('click', function(event){
+    event.preventDefault();
+    showFormById('historyAdded');
+    document.getElementById('history-show').classList.add('bg-[#B4F461]');
+    document.getElementById('donation-show').classList.remove('bg-[#B4F461]');
+    
+})
 
 
 

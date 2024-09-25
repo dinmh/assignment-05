@@ -30,15 +30,15 @@
               
         </nav>
         <div class="flex justify-center mx-auto gap-6 mt-6 pb-6"> 
-            <button class="btn">
+            <button id="donation-show" class="btn bg-[#B4F461]">
                 Donation
             </button>
-            <button class="btn">
+            <button id="history-show" class="btn">
                 History
             </button>
         </div>
     </header>
-    <main>
+    <main id="donationAdded">
         <!-- section one start -->
        <section>
             <div class="grid sm:grid-cols-1 lg:grid-cols-2  bg-base-100 max-w-screen-lg mx-auto shadow-xl rounded-lg gap-4 py-4 ">
@@ -66,7 +66,7 @@
                     <form class="flex flex-col mt-4 w-96" action="">
                         <input id="input-noakhali" type="text" placeholder="Write Donation Amount" autocomplete="off" class="input input-bordered mb-4 max-w-full col-span-2" />
                             
-                        <button id="noakhali" onclick="my_modal_5.showModal()" class="btn bg-[#B4F461] text-left">Donate Now</button>
+                        <button id="noakhali" class="btn bg-[#B4F461] text-left">Donate Now</button>
                     </form>    
                         
                                                  
@@ -101,7 +101,7 @@
                 <form class="flex flex-col mt-4 w-96" action="">
                     <input id="input-feni" type="text" placeholder="Write Donation Amount" class="input input-bordered mb-4 max-w-full col-span-2" />
                         
-                    <button id="feni" onclick="my_modal_5.showModal()" class="btn bg-[#B4F461] text-left">Donate Now</button>
+                    <button id="feni" class="btn bg-[#B4F461] text-left">Donate Now</button>
                 </form>    
                     
                                              
@@ -135,7 +135,7 @@
                  <form class="flex flex-col mt-4 w-96" action="">
                      <input id="input-quota" type="text" placeholder="Write Donation Amount" class="input input-bordered mb-4 max-w-full col-span-2" />
                          
-                     <button id="quota" onclick="my_modal_5.showModal()" class="btn bg-[#B4F461] text-left">Donate Now</button>
+                     <button id="quota" class="btn bg-[#B4F461] text-left">Donate Now</button>
                  </form>    
                      
                                               
@@ -170,7 +170,7 @@
              <form class="flex flex-col mt-4 w-96" action="">
                  <input id="input-contribute" type="text" placeholder="Write Donation Amount" class="input input-bordered mb-4 max-w-full col-span-2" />
                      
-                 <button id="contribute" onclick="my_modal_5.showModal()" class="btn bg-[#B4F461] text-left">Donate Now</button>
+                 <button id="contribute" class="btn bg-[#B4F461] text-left">Donate Now</button>
              </form>    
                  
                                           
@@ -206,7 +206,7 @@
                 <form class="flex flex-col mt-4 w-96" action="">
                     <input id="input-soliderity" type="text" placeholder="Write Donation Amount" class="input input-bordered mb-4 max-w-full col-span-2" />
                         
-                    <button id="soliderity" onclick="my_modal_5.showModal()" class="btn bg-[#B4F461] text-left">Donate Now</button>
+                    <button id="soliderity" class="btn bg-[#B4F461] text-left">Donate Now</button>
                 </form>    
                     
                                             
@@ -217,9 +217,7 @@
 
 
         <!-- History add section -->
-        <section class="bg-base-100 max-w-screen-lg mx-auto shadow-xl rounded-lg gap-4 py-4 mt-6">
-
-        </section>
+        
 
         <!-- You can open the modal using ID.showModal() method -->
 
@@ -236,9 +234,15 @@
                         </form>
                       </div>
                     </div>
-                  </dialog>
+                </dialog>
     
     </main>  
+    <footer>
+        <section id="historyAdded" class="bg-base-100 hidden max-w-screen-lg mx-auto shadow-xl rounded-lg gap-4 py-4 mt-6"></section>
+            
+            <div id="historyAddedArea" class="mx-auto py-4 mt-6 text-center"></div>
+        </section>
+    </footer>
     <script src="/ffunction.js"></script>
     <script src="/addMoney.js"></script>
 </body>
