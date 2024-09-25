@@ -1,77 +1,74 @@
 document.getElementById('noakhali')
 .addEventListener('click', function(event){
     event.preventDefault();
-    const inputNoakhali = getInputValueById('input-noakhali');
-    
-    const addMoney = getTextValueById('add-money');
 
-    const newMoney = addMoney + inputNoakhali;
-    document.getElementById('add-money').innerText = newMoney;
+handleAmountById('input-noakhali','add-money-noakhali');
     
-    
-    const donateAmount = getDonateValueById('funded-amount');
-    const recentTotalMoney = donateAmount - inputNoakhali;
-    document.getElementById('funded-amount').innerText = recentTotalMoney;
-    
+const inputNoakhali = getInputValueById('input-noakhali'); 
+
+const div = document.createElement('div');
+div.innerHTML = `
+    <h2 class="mx-auto font-bold text-lg px-4 text-justify">Donated ${inputNoakhali} tk Donate for Flood at Noakhali, Bangladesh</h2>
+    <p class="mx-auto text-justify px-4 mb-4"> Given date is ${new Date().toString()} </p>`
+document.getElementById('history-added-area').appendChild(div);
+
 })
 
 
 
-// feni
+// // feni
 
 document.getElementById('feni')
 .addEventListener('click', function(event){
     event.preventDefault();
-    const inputNoakhali = getInputValueById('input-feni');
-    
-    const addMoney = getTextValueById('add-money-feni');
-    
 
-    const newMoney = addMoney + inputNoakhali;
+handleAmountById('input-feni','add-money-feni');
+    
+const inputNoakhali = getInputValueById('input-feni'); 
 
-    document.getElementById('add-money-feni').innerText = newMoney;
-    
-    
-    const donateAmount = getDonateValueById('funded-amount');
-    const recentTotalMoney = donateAmount - inputNoakhali;
-    document.getElementById('funded-amount').innerText = recentTotalMoney;
+const div = document.createElement('div');
+div.innerHTML = `
+    <h2 class="mx-auto font-bold text-lg px-4 text-justify">Donated ${inputNoakhali} tk Donate for Flood Relief in Feni,Bangladesh</h2>
+    <p class="mx-auto text-justify px-4 mb-4"> Given date is ${new Date().toString()} </p>`
+document.getElementById('history-added-area').appendChild(div);
+
     
 })
 
 
 
-// quota
+// // quota
 document.getElementById('quota')
 .addEventListener('click', function(event){
     event.preventDefault();
-    const inputNoakhali = getInputValueById('input-quota');
     
-    const addMoney = getTextValueById('add-money-quota');
+ handleAmountById('input-quota','add-money-quota');
     
-
-    const newMoney = addMoney + inputNoakhali;
-
-    document.getElementById('add-money-quota').innerText = newMoney;
+    const inputNoakhali = getInputValueById('input-quota'); 
     
-    
-    const donateAmount = getDonateValueById('funded-amount');
-    const recentTotalMoney = donateAmount - inputNoakhali;
-    document.getElementById('funded-amount').innerText = recentTotalMoney;
+    const div = document.createElement('div');
+    div.innerHTML = `
+        <h2 class="mx-auto font-bold text-lg px-4 text-justify">Donated ${inputNoakhali} tk Donate for Aid for Injured in the Quota Movement</h2>
+        <p class="mx-auto text-justify px-4 mb-4"> Given date is ${new Date().toString()} </p>`
+    document.getElementById('history-added-area').appendChild(div);
     
 })
 
-// Yourth contributing
+// // Yourth contributing
 
 document.getElementById('contribute')
 .addEventListener('click', function(event){
     event.preventDefault();
+
+    handleAmountById('input-contribute','add-money-contribute');
+    
     const inputNoakhali = getInputValueById('input-contribute'); 
-    const addMoney = getTextValueById('add-money-contribute');
-    const newMoney = addMoney + inputNoakhali;
-    document.getElementById('add-money-contribute').innerText = newMoney;
-    const donateAmount = getDonateValueById('funded-amount');
-    const recentTotalMoney = donateAmount - inputNoakhali;
-    document.getElementById('funded-amount').innerText = recentTotalMoney;
+    
+    const div = document.createElement('div');
+    div.innerHTML = `
+        <h2 class="mx-auto font-bold text-lg px-4 text-justify">Donated ${inputNoakhali} tk Donate for Youth contribution to Flood Relief in Unique Ways</h2>
+        <p class="mx-auto text-justify px-4 mb-4"> Given date is ${new Date().toString()} </p>`
+    document.getElementById('history-added-area').appendChild(div);
     
 })
 
@@ -80,21 +77,18 @@ document.getElementById('contribute')
 document.getElementById('soliderity')
 .addEventListener('click', function(event){
     event.preventDefault();
-    const inputNoakhali = getInputValueById('input-soliderity'); 
-    const addMoney = getTextValueById('add-money-soliderity');
+
+    handleAmountById('input-soliderity','add-money-soliderity');
     
-    // if (isNaN(inputNoakhali) &&  inputNoakhali<= 0 &&  inputNoakhali>recentTotalMoney && !document.getElementById('inputNoakhali').value){
-    //     aleart ('Please input valid number');
-    //     return;
-    // }
-        
-    const newMoney = addMoney + inputNoakhali;
-    document.getElementById('add-money-soliderity').innerText = newMoney;
-
-    const donateAmount = getDonateValueById('funded-amount');
-    const recentTotalMoney = donateAmount - inputNoakhali;
-    document.getElementById('funded-amount').innerText = recentTotalMoney;
-
+    const inputNoakhali = getInputValueById('input-soliderity'); 
+    
+    const div = document.createElement('div');
+    
+    div.innerHTML = `
+        <h2 class="mx-auto font-bold text-lg px-4 text-justify">Donated ${inputNoakhali} tk Donate for Bangladesh’s unexpected show of solidarity</h2>
+        <p class="mx-auto text-justify px-4 mb-4"> Given date is ${new Date().toString()} </p>`
+    document.getElementById('history-added-area').appendChild(div);
+ 
 })
 
 // show form
@@ -113,7 +107,7 @@ document.getElementById('history-show')
     showFormById('historyAdded');
     document.getElementById('history-show').classList.add('bg-[#B4F461]');
     document.getElementById('donation-show').classList.remove('bg-[#B4F461]');
-    
+   
 })
 
 
