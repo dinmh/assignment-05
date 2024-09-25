@@ -94,8 +94,6 @@ document.getElementById('soliderity')
     const donateAmount = getDonateValueById('funded-amount');
     const recentTotalMoney = donateAmount - inputNoakhali;
     document.getElementById('funded-amount').innerText = recentTotalMoney;
-    
-    
 
 })
 
